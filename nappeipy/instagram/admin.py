@@ -4,7 +4,7 @@ from .models import Post
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = ['id','msg_length','message','is_public','created_at','updated_at']
-    list_display_links = ['id','message']
+    list_display_links = ['message']
     list_filter = ['created_at','is_public']
     search_fields = ['message']
 
