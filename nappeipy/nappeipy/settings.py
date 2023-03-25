@@ -25,7 +25,9 @@ SECRET_KEY = '_d3tcx+%2$6=zmp-u#v!y9$-1!o+^3speg9(_sv52+xyw65ysi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'nappeni.pythonanywhere.com'
+]
 
 
 # Application definition
