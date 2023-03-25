@@ -26,7 +26,9 @@ SECRET_KEY = '_d3tcx+%2$6=zmp-u#v!y9$-1!o+^3speg9(_sv52+xyw65ysi'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'nappeni.pythonanywhere.com'
+    'nappeni.pythonanywhere.com',
+    '127.0.0.1',
+    'localhost',
 ]
 
 
