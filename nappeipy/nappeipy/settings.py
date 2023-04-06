@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # third apps
+    'bootstrap5',
     'django_extensions',
     'debug_toolbar',
     # locals apps
@@ -67,7 +68,10 @@ ROOT_URLCONF = 'nappeipy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # File System Template Loader = 여기서 지정된 경로에서 파일을 찾아줌
+            os.path.join(BASE_DIR,'nappeipy','templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
